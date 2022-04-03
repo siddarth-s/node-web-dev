@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/siddarth-s/node-web-dev/issues"
   },
-  "homepage": "https://github.com/siddarth-s/node-web-dev#readme"
+  "homepage": "https://github.com/siddarth-s/node-web-dev#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
