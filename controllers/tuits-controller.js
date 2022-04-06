@@ -5,6 +5,13 @@ const createTuit = (req, res) => {
     const newTuit = req.body;
     newTuit._id = (new Date()).getTime()+'';
     newTuit.likes = 0;
+    newTuit.dislikes = 0;
+    newTuit.postedBy = {};
+    newTuit.postedBy.username = "Elon";
+    newTuit.avatarIcon = "/tuiter/images/musk-dp.jpg";
+    newTuit.attachments = {}
+    newTuit.attachments.image = "/tuiter/images/insp4.jpg"
+    newTuit.handle = " @elonmusk",
     tuits.push(newTuit);
     res.json(newTuit);
 };
