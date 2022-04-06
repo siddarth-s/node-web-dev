@@ -10,9 +10,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// app.get('/hello', (req, res) => {res.send('Life is good!')})
+app.get('/hello', (req, res) => {res.send('Life is good!')})
 helloController(app);
-// app.get('/', (req, res) => {res.send('Welcome to Full Stack Development!')});
+app.get('/', (req, res) => {res.send('Welcome to Full Stack Development!')});
 userController(app);
 tuitsController(app);
 app.listen(process.env.PORT || 4000);
