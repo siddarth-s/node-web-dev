@@ -24,8 +24,8 @@ const findUserById = (req, res) => {
 
 const findUsersByType = (type) => {
     const usersofType = users.filter(obj => obj['type'] === type);
-    return usersofType.map(x => x.username); //uncomment this line to display without the json
-    // return usersofType;
+    // return usersofType.map(x => x.username); //uncomment this line to display without the json
+    return usersofType;
 }
 
 const findAllUsers = (req, res) => {
