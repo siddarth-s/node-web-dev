@@ -5,6 +5,7 @@ import tuitsDao from "../database/tuits/tuits-dao.js";
 
 const createTuit = async (req, res) => {
     const newTuit = req.body;
+    // console.log(newTuit);
     const insertedTuit = await tuitsDao.createTuit(newTuit);
     res.json(insertedTuit);
 };
